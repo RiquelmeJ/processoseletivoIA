@@ -21,7 +21,7 @@ def main():
     with open(tflite_model_path, "wb") as f:
         f.write(tflite_model)
     
-    print(f"Modelo otimizado salvo: {tflite_model_path}")
+    print(f"Modelo otimizado salvo em {tflite_model_path}")
 
     h5_size = os.path.getsize(model_path) / 1024
     tflite_size = os.path.getsize(tflite_model_path) / 1024
